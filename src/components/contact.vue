@@ -20,28 +20,29 @@
 	<div id="tabs0">
         <div class="hdk">
          <ul class="menu0" id="menu0">
-          <li onClick="setTab(0,0)" class="hover">关于我们</li>
-          <li onClick="setTab(0,1)">联系我们</li>
-          <li onClick="setTab(0,2)">加入我们</li>
+          <li  :class="{hover:isc1}" @click="tab(1)">关于我们</li>
+          <li @click="tab(2)" :class="{hover:isc2}">联系我们</li>
+          <li @click="tab(3)" :class="{hover:isc3}">加入我们</li>
          </ul>
          </div>
          <div class="piece" id="piece0">
-          <ul class="block">
-          <li>
-          	<div class="about">尊贵的客户，您好！欢迎进入伯爵婚纱摄影客户服务中心！这里将为您展示新人的幸福瞬间。与此同时，并将最美好的祝福送给每对新人。
-伯爵婚纱摄影客户咨询热线：0754-86865141 太阳城欢迎广大追求美的新人前来咨询，我们将留给您不一样的记忆。
-了解我们，从这里开始 | 摄影常见问题解答 | 服务须知：拍摄当天 | 服务须知：拍摄前准备 | 高端定制服务服务流程 | 高端定制服务服务说明
-郑重声明：伯爵客户服务频道所展示的作品均来自真实客人定制照片，并经由客户本人同意在唯一官方网站www.stbjhs.com进行发表。
-未经允许不得转载或用于任何商业用途，违者必究！伯爵婚纱摄影客户咨询热线：0754-86865141 太阳城欢迎广大追求美的新人前来咨询，我们将留给您不一样的记忆。
-了解我们，从这里开始 | 摄影常见问题解答 | 服务须知：拍摄当天 | 服务须知：拍摄前准备 | 高端定制服务服务流程 | 高端定制服务服务说明
-郑重声明：伯爵客户服务频道所展示的作品均来自真实客人定制照片，并经由客户本人同意在唯一官方网站www.stbjhs.com进行发表。
-未经允许不得转载或用于任何商业用途，伯爵婚纱摄影客户咨询热线：0754-86865141 太阳城欢迎广大追求美的新人前来咨询，我们将留给您不一样的记忆。
-了解我们，从这里开始 | 摄影常见问题解答 | 服务须知：拍摄当天 | 服务须知：拍摄前准备 | 高端定制服务服务流程 | 高端定制服务服务说明
-郑重声明：伯爵客户服务频道所展示的作品均来自真实客人定制照片，并经由客户本人同意在唯一官方网站www.stbjhs.com进行发表。
-未经允许不得转载或用于任何商业用途，</div>
-          </li>
-		   </ul>
-          <ul>
+          <ul v-show="isc1">
+            <li>
+            	<div class="about">尊贵的客户，您好！欢迎进入伯爵婚纱摄影客户服务中心！这里将为您展示新人的幸福瞬间。与此同时，并将最美好的祝福送给每对新人。
+                伯爵婚纱摄影客户咨询热线：0754-86865141 太阳城欢迎广大追求美的新人前来咨询，我们将留给您不一样的记忆。
+                了解我们，从这里开始 | 摄影常见问题解答 | 服务须知：拍摄当天 | 服务须知：拍摄前准备 | 高端定制服务服务流程 | 高端定制服务服务说明
+                郑重声明：伯爵客户服务频道所展示的作品均来自真实客人定制照片，并经由客户本人同意在唯一官方网站www.stbjhs.com进行发表。
+                未经允许不得转载或用于任何商业用途，违者必究！伯爵婚纱摄影客户咨询热线：0754-86865141 太阳城欢迎广大追求美的新人前来咨询，我们将留给您不一样的记忆。
+                了解我们，从这里开始 | 摄影常见问题解答 | 服务须知：拍摄当天 | 服务须知：拍摄前准备 | 高端定制服务服务流程 | 高端定制服务服务说明
+                郑重声明：伯爵客户服务频道所展示的作品均来自真实客人定制照片，并经由客户本人同意在唯一官方网站www.stbjhs.com进行发表。
+                未经允许不得转载或用于任何商业用途，伯爵婚纱摄影客户咨询热线：0754-86865141 太阳城欢迎广大追求美的新人前来咨询，我们将留给您不一样的记忆。
+                了解我们，从这里开始 | 摄影常见问题解答 | 服务须知：拍摄当天 | 服务须知：拍摄前准备 | 高端定制服务服务流程 | 高端定制服务服务说明
+                郑重声明：伯爵客户服务频道所展示的作品均来自真实客人定制照片，并经由客户本人同意在唯一官方网站www.stbjhs.com进行发表。
+                未经允许不得转载或用于任何商业用途，
+             </div>
+            </li>
+		     </ul>
+      <ul v-show="isc2">
           <li>
           	<div class="contact">
             <p><strong>中国时通运营中心</strong></p> 
@@ -64,8 +65,8 @@
             <p>热线:   +86-592-55858640</p>  
             <p>电子邮箱:  info5@stonebtb.com </p> 
             </div></li>
- 		</ul>
-        <ul class="block">
+ 		  </ul>
+       <ul v-show="isc3">
           <li>
           	<div class="jiaru">
             <p style=" font-size:24px; font-weight:bold; color:#F00;">招聘启示  </p>
@@ -76,8 +77,9 @@
                        <p style=" color:#333; padding-left:20px;"> ● 摄象机，照明设备以及摇臂等相关器材的日常维护和保养。</p> 
                        <p style=" color:#333; padding-left:20px;"> ● 为了提高整体视频拍摄的工作效率，积极配合和帮助其他部门，确保拍摄在规定时间内保质保量完成</p><br /> 
                      </p>
-              <p style=" font-size:16px; font-weight:bold;">岗位要求：</p>
-              <p style=" color:#333; padding-left:20px;">● 大专或以上学历，影视编导、新闻传播等相关专业毕业。</p>
+                    <p style=" font-size:16px; font-weight:bold;">岗位要求：</p>
+                    <p style=" color:#333; padding-left:20px;">●  大专或以上学历，影视编导、新闻传播等相关专业毕业。
+                    </p>
                       <p style=" color:#333; padding-left:20px;">  ● 2-3年拍摄工作经验，熟悉各种摄像机，较强的镜头感和创意感，能独立拍摄，熟练操作premiere、photoshop、 dps等非线性编辑软件，进行后期图片，视频处理</p> 
                       <p style=" color:#333; padding-left:20px;">  ● 良好的文字功底和丰富的创意能力，熟悉影视广告，栏目包装和视频制作流程，能与编导很好沟通。</p> 
                        <p style=" color:#333; padding-left:20px;"> ● 对光、构图、声音均有一定造诣，能承受高强度工作，能独立完成拍摄以及视频前期创意策划，脚本撰写、指导拍摄、后期制作的相关工作</p> <br /> 
@@ -90,7 +92,7 @@
             </div>
           </li>
 		   </ul>
-          </ul>
+  
          </div>
         </div>
  </div>
@@ -101,7 +103,27 @@
   name: '',
   data () {
     return {
-      msg: ''
+      msg: '',
+      isc1:true,
+      isc2:false,
+      isc3:false
+    }
+  },
+  methods:{
+    tab:function(m){
+      if(m==1){
+        this.isc1=true;
+        this.isc2=false;
+        this.isc3=false;
+      }else if(m==2){
+        this.isc1=false;
+        this.isc2=true;
+        this.isc3=false;
+      }else if(m==3){
+        this.isc1=false;
+        this.isc2=false;
+        this.isc3=true;
+      }
     }
   },
   mounted:function(){
@@ -133,13 +155,6 @@
 	$("#slider3").Xslider({
 		affect:'fade',
 		ctag: 'div'
-	});
-	
-	// 选项卡
-	$("#slider4").Xslider({
-		affect:'none',
-		ctag: 'div',
-		speed:10
 	});
 	
   }
@@ -185,6 +200,7 @@
 #main0 ul.block{
  display: block;
 }
+
 .b02 #tabs0 #piece0 li{ color:#555555; font-size:13px; font-family:Arial, Helvetica, sans-serif; line-height:18px; padding:15px;}
 .box .mainlist{padding:10px;}
 #piece0 ul li table tr td{ line-height:40px; line-height:40px; }

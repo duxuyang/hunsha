@@ -20,10 +20,10 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'customers',
-      component: customers
+      name: 'index',
+      component: index
     },
-        {
+    {
       path:'/index',
       component:index
     },
@@ -31,38 +31,41 @@ export default new Router({
       path:'/message',
       component:message
     },
-        {
+     {
       path:'/photoesdetail',
       component:photoesdetail
     },
-        {
+    {
       path:'/photoes',
-      component:message
+      component:photoes
     },
-        {
-      path:'/photoes',
-      component:message
-    },
-        {
+    {
       path:'/newsdetail',
-      component:message
+      component:newsdetail
     },
-        {
+    {
       path:'/news',
       component:news
     },
-        {
+    {
       path:'/customers',
       component:customers
     },
-            {
+    {
       path:'/contact',
       component:contact
     },
-            {
+    {
       path:'/activity',
       component:activity
-    }
-
+    },
+    {
+      path:'/login',
+      component:login
+    },
+    {
+      path:'/register',
+      component:register
+    },
   ]
 })
