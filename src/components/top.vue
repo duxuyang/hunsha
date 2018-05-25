@@ -16,7 +16,7 @@
                      <li class="navthis22" @click="info(3)">每日客照</li>
                     <li class="navthis8" @click="info(4)">最近活动
                     </li>
-                    <li class="navthis27"><a href="#" >微博评价</a></li>   
+                    <li class="navthis27" @click="info('w')"><a href="#" >微博评价</a></li>   
                     <li class="navthis9"  @click="info(5)">新闻动态
                     </li>  
                     <li class="navthis24" @click="info(6)">留言板</li>

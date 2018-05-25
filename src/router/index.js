@@ -13,6 +13,7 @@ import newsdetail from '@/components/newsdetail'
 import photoes from '@/components/photoes'
 import photoesdetail from '@/components/photoesdetail'
 import message from '@/components/message'
+import weibo from '@/components/weibo'
 
 Vue.use(Router)
 
@@ -66,6 +67,10 @@ export default new Router({
     {
       path:'/register',
       component:register
+    },
+      {
+      path:'/weibo',
+      component:weibo
     },
   ]
 })

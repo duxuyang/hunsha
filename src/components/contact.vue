@@ -20,13 +20,11 @@
 	<div id="tabs0">
         <div class="hdk">
          <ul class="menu0" id="menu0">
-          <li  :class="{hover:isc1}" @click="tab(1)">关于我们</li>
-          <li @click="tab(2)" :class="{hover:isc2}">联系我们</li>
-          <li @click="tab(3)" :class="{hover:isc3}">加入我们</li>
+          <li v-for="(value,index) in tablist" :class="{hover:index==num}" @click="tab(index)">{{value}}</li>
          </ul>
          </div>
          <div class="piece" id="piece0">
-          <ul v-show="isc1">
+          <ul v-show="num==0">
             <li>
             	<div class="about">尊贵的客户，您好！欢迎进入伯爵婚纱摄影客户服务中心！这里将为您展示新人的幸福瞬间。与此同时，并将最美好的祝福送给每对新人。
                 伯爵婚纱摄影客户咨询热线：0754-86865141 太阳城欢迎广大追求美的新人前来咨询，我们将留给您不一样的记忆。
@@ -42,7 +40,7 @@
              </div>
             </li>
 		     </ul>
-      <ul v-show="isc2">
+      <ul v-show="num==1">
           <li>
           	<div class="contact">
             <p><strong>中国时通运营中心</strong></p> 
@@ -66,7 +64,7 @@
             <p>电子邮箱:  info5@stonebtb.com </p> 
             </div></li>
  		  </ul>
-       <ul v-show="isc3">
+       <ul v-show="num==2">
           <li>
           	<div class="jiaru">
             <p style=" font-size:24px; font-weight:bold; color:#F00;">招聘启示  </p>
@@ -104,26 +102,13 @@
   data () {
     return {
       msg: '',
-      isc1:true,
-      isc2:false,
-      isc3:false
+      tablist:["关于我们","联系我们","加入我们"],
+      num:0
     }
   },
   methods:{
-    tab:function(m){
-      if(m==1){
-        this.isc1=true;
-        this.isc2=false;
-        this.isc3=false;
-      }else if(m==2){
-        this.isc1=false;
-        this.isc2=true;
-        this.isc3=false;
-      }else if(m==3){
-        this.isc1=false;
-        this.isc2=false;
-        this.isc3=true;
-      }
+    tab:function(index){
+      this.num=index;
     }
   },
   mounted:function(){
