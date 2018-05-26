@@ -13,7 +13,9 @@ import newsdetail from '@/components/newsdetail'
 import photoes from '@/components/photoes'
 import photoesdetail from '@/components/photoesdetail'
 import message from '@/components/message'
-import weibo from '@/components/weibo'
+import weibo1 from '@/components/weibo1'
+import demo1 from '@/components/demo1'
+import demo2 from '@/components/demo2'
 
 Vue.use(Router)
 
@@ -68,9 +70,23 @@ export default new Router({
       path:'/register',
       component:register
     },
-      {
-      path:'/weibo',
-      component:weibo
-    },
+    {
+      path:'/weibo1',
+      component:weibo1,
+      children:[
+      	{
+          path:'/',
+          component:demo1
+        },
+         {
+          path:'/demo1',
+          component:demo1
+        },    
+      	{
+          path:'/demo2',
+          component:demo2
+        }    
+      ]
+    }
   ]
 })

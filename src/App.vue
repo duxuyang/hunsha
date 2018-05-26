@@ -30,8 +30,8 @@ export default {
   			this.$router.push('/message');
   		}else if(d==7){
   			this.$router.push('/contact');
-  		}else if(d=='w'){
-        this.$router.push('/weibo');
+  		}else if(d==8){
+        this.$router.push('/weibo1');
       }
   		
   	}
