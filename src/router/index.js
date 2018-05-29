@@ -16,7 +16,9 @@ import message from '@/components/message'
 import weibo1 from '@/components/weibo1'
 import demo1 from '@/components/demo1'
 import demo2 from '@/components/demo2'
-
+import parent from '@/components/parent'
+import son from '@/components/son'
+import son1 from '@/components/son1'
 Vue.use(Router)
 
 export default new Router({
@@ -87,6 +89,10 @@ export default new Router({
           component:demo2
         }    
       ]
+    },
+    {
+      path:'/parent',
+      component:parent
     }
   ]
 })

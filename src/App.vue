@@ -32,6 +32,8 @@ export default {
   			this.$router.push('/contact');
   		}else if(d==8){
         this.$router.push('/weibo1');
+      }else if(d==9){
+        this.$router.push('/parent');
       }
   		
   	}

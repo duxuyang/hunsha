@@ -21,6 +21,7 @@
                     </li>  
                     <li class="navthis24" @click="info(6)">留言板</li>
                     <li class="navthis25" @click="info(7)">联系我们</li>
+                   <li class="navthis25" @click="info(9)">父级元素</li>
                     </ul>
 			</div>
         </div>
