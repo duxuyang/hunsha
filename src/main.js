@@ -13,7 +13,7 @@ Vue.config.productionTip = false
 
 Vue.component('top',top);
 Vue.component('footerb',footerb);
-/* eslint-disable no-new */
+
 new Vue({
   el: '#app',
   router,
