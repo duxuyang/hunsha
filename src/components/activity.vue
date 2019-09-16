@@ -155,6 +155,12 @@
       msg: ''
     }
   },
+  methods:{
+  	add(){
+  		
+  	}
+  },
+  
   mounted:function(){
   		// 焦点图片水平滚动
 	$("#slider1").Xslider({
