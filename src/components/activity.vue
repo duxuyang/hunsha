@@ -157,7 +157,7 @@
   },
   methods:{
   	add(){
-  		
+  		console.log("测试")
   	}
   },
   
