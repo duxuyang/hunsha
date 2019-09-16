@@ -8,7 +8,6 @@
 				<div><a href="#" title=""><img width="620" height="340" alt="" src="http://www.jsfoot.com/d/file/jquery/items/2011-08-13/323ce4b13f72648e096bd1a86cba762a.jpg"></a></div>
 				<div><a href="#" title=""><img width="620" height="340" alt="" src="http://www.jsfoot.com/d/file/jquery/items/2011-08-17/9fae30738c94fb8e47dd2ba3e6003290.jpg"></a></div>
 			</div>
-
 			<div class="switcher">
 				<a href="#" class="cur">1</a>
 				<a href="#">2</a>
